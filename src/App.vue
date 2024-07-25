@@ -1,9 +1,12 @@
-<script setup></script>
+<script setup>
+import HeaderMenu from './components/HeaderMenu.vue';
+import MainPage from './components/MainPage.vue';
+import FooterMenu from './components/FooterMenu.vue';
+</script>
 
 <template>
-  <h2 class="visible bg-orange-500 text-center text-2xl">
-    Привет, мир! Скоро тут будет новый интернет-магазин
-  </h2>
-  <p><a href="/test">Ссылка на тестовый роутер</a></p>
+  <HeaderMenu></HeaderMenu>
+  <MainPage></MainPage>
   <router-view></router-view>
+  <FooterMenu></FooterMenu>
 </template>
