@@ -2,16 +2,17 @@ import './assets/main.css';
 
 import { createApp } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
-import TestRouter from './components/router-components/TestRouter.vue';
+import MainPage from './components/MainPage.vue';
 import App from './App.vue';
 
 const router = createRouter({
   routes: [
     {
-      path: '/test',
-      component: TestRouter
+      path: '/',
+      component: MainPage
     }
   ],
+
   history: createWebHistory()
 });
 
