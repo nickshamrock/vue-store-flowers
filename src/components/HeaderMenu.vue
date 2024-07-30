@@ -28,7 +28,7 @@
           class="font-[Oswald] text-sm uppercase leading-5 tracking-widest text-white hover:text-[#43FFD2] hover:underline hover:underline-offset-2"
           >FAQ</a
         >
-        <div class="mr-36 flex">
+        <div class="mr-16 flex">
           <img src="/search-icon.svg" height="18px" width="18px" class="mr-3 block" />
           <input
             class="block w-24 bg-black font-[Oswald] text-sm uppercase leading-5 tracking-widest text-white outline-none placeholder:text-white"

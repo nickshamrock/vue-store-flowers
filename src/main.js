@@ -2,7 +2,7 @@ import './assets/main.css';
 
 import { createApp } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
-import MainPage from './components/MainPage.vue';
+import MainPage from './components/router-components/MainPage.vue';
 import App from './App.vue';
 
 const router = createRouter({
