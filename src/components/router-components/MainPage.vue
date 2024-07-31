@@ -5,7 +5,7 @@
     >
       <header class="mb-[52px] h-fit w-full">
         <nav class="flex flex-wrap items-center justify-start pl-40 pr-40">
-          <img src="/logo.png" class="mr-14 block" />
+          <img src="/public/logo.png " class="mr-14 block" />
           <div class="flex flex-wrap gap-14">
             <a
               href="#"
@@ -33,7 +33,12 @@
               >FAQ</a
             >
             <div class="mr-16 flex hover:cursor-pointer">
-              <img src="/search-icon.svg" height="18px" width="18px" class="mr-3 block" />
+              <img
+                src="/public/icons/search-icon.svg"
+                height="18px"
+                width="18px"
+                class="mr-3 block"
+              />
               <input
                 class="block w-24 bg-black font-[Oswald] text-sm uppercase leading-5 tracking-widest text-white outline-none placeholder:text-white"
                 placeholder="Поиск"
@@ -62,21 +67,39 @@
       </div>
 
       <!-- <img src="/images/green-ellipse.png" class="absolute" /> -->
-      <div class="hidden">
+      <div class="absolute right-0 top-6 mr-40 flex flex-col items-end">
+        <div class="mb-7 flex flex-col items-end gap-1">
+          <p class="font-[Oswald] text-sm uppercase leading-5 tracking-widest text-[#43FFD2]">
+            zakaz@loverflower.by
+          </p>
+          <p
+            class="font-[Oswald] text-[10px] font-thin uppercase leading-3 tracking-widest text-white"
+          >
+            Доставка 24/7 по договоренности с оператором
+          </p>
+        </div>
+
+        <p class="text-white">ул. Тимирязева 67</p>
+        <p class="text-white">10:00 до 21:00</p>
+        <p class="text-white">без выходных</p>
+
+        <div>
+          <a><img src="/public/icons/instagram-icon.svg" /></a>
+          <a><img src="/public/icons/whatsapp-icon.svg" /></a>
+          <a><img src="/public/icons/viber-icon.svg" /></a>
+        </div>
+
         <a
           href="tel:+375291136969"
           class="block font-[Oswald] text-sm leading-5 tracking-widest text-[#43FFD2]"
           >+375 (29) 113-69-69</a
         >
-        <img src="/phone-icon.svg" height="18px" width="18px" class="block" />
+        <img src="/public/icons/phone-icon.svg" height="18px" width="18px" class="block" />
         <p class="text-white">Заказать звонок</p>
-        <p class="text-white">zakaz@loverflower.by</p>
-        <p class="text-white">Доставка 24/7 по договоренности с оператором</p>
-        <p class="text-white">ул. Тимирязева 67</p>
-        <p class="text-white">10:00 до 21:00 без выходных</p>
+
         <div class="relative w-16 bg-black">
           <a href="#" class="block p-4">
-            <img src="/basket-icon.svg" height="30px" width="30px" class="block" />
+            <img src="/public/icons/basket-icon.svg" height="30px" width="30px" class="block" />
           </a>
           <span
             class="absolute right-[8px] top-[12px] h-4 w-4 rounded-[50%] bg-[#43FFD2] text-center align-middle font-[Oswald] text-xs"
