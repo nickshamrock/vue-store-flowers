@@ -1,6 +1,78 @@
 <template>
-  <p>Это подвал сайта</p>
-  <!-- <div
-    class="h-screen w-full bg-[url('/images/black-background-for-first-section.png')] sepia"
-  ></div> -->
+  <footer
+    class="relative flex min-h-[337px] w-full justify-between bg-[#040A0A] px-[165px] pt-[30px]"
+  >
+    <div class="flex h-auto max-w-[254px] flex-col outline outline-2 outline-cyan-50">
+      <img src="/public/logo.png" class="h-[75px] w-[34px]" />
+      <h3 class="footer-h3">Реквизиты</h3>
+      <p class="footer-p">
+        ООО «Ловефлове» 220035, Республика Беларусь, г. Минск, ул. Тимирязева д. 67, комн. 112
+        (пом.11) УНП 193263781, р/с BY55MTBK30120001093300096372 ЗАО «МТБанк», БИК MTBKBY22 220007,
+        г. Минск, улица Толстого
+      </p>
+    </div>
+
+    <div class="flex h-auto flex-col outline outline-2 outline-cyan-50">
+      <a href="#" class="footer-a-like-h3 mb-[10px]">Каталог</a>
+      <div class="flex flex-col gap-1">
+        <a href="#" class="footer-a">Популярное</a>
+        <a href="#" class="footer-a">Сухоцветы</a>
+        <a href="#" class="footer-a">Букеты роз</a>
+        <a href="#" class="footer-a">Композиции из цветов</a>
+        <a href="#" class="footer-a">Индивидуальный букет</a>
+        <a href="#" class="footer-a">Букет на праздник</a>
+        <a href="#" class="footer-a">Упаковка подарков</a>
+        <a href="#" class="footer-a">Шары</a>
+        <a href="#" class="footer-a">Открытки</a>
+        <a href="#" class="footer-a">Конверты</a>
+      </div>
+    </div>
+
+    <div class="flex h-auto flex-col outline outline-2 outline-cyan-50">
+      <a href="#" class="footer-a-like-h3 mb-[10px]">Букет</a>
+      <div class="flex flex-col gap-1">
+        <a href="#" class="footer-a">Для девушки</a>
+        <a href="#" class="footer-a">Для мужчины</a>
+        <a href="#" class="footer-a">Для жены</a>
+        <a href="#" class="footer-a">Для мамы</a>
+        <a href="#" class="footer-a">Для коллеги</a>
+        <a href="#" class="footer-a">Для начальника</a>
+        <a href="#" class="footer-a">Для дочки</a>
+        <a href="#" class="footer-a">Для детей</a>
+        <a href="#" class="footer-a">Для женщины</a>
+      </div>
+    </div>
+    <div class="flex h-auto max-w-40 flex-col gap-5 outline outline-2 outline-cyan-50">
+      <a href="#" class="footer-a-like-h3">Доставка и оплата </a>
+      <a href="#" class="footer-a-like-h3">О нас</a>
+      <a href="#" class="footer-a-like-h3"> FAQ</a>
+      <a href="#" class="footer-a-like-h3">Контакты</a>
+      <a href="#" class="footer-a-like-h3">для корпоративных клиентов</a>
+    </div>
+    <div class="flex h-auto flex-col outline outline-2 outline-cyan-50"></div>
+  </footer>
 </template>
+
+<style scoped>
+.footer-h3,
+.footer-a-like-h3 {
+  font-family: 'Oswald';
+  font-size: 14px;
+  color: #43ffd2;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 20.75px;
+  letter-spacing: 1px;
+}
+
+.footer-p,
+.footer-a {
+  font-family: 'Oswald';
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 17.78px;
+  letter-spacing: 1px;
+}
+</style>

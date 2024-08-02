@@ -134,6 +134,7 @@
           >
         </div>
       </div>
+
       <div class="gradient absolute bottom-0 z-40 h-1/3 w-full"></div>
       <img
         src="/public/images/lover-flower-signature.png"
@@ -142,8 +143,6 @@
     </div>
   </section>
 </template>
-
-background: linear-gradient(180deg, rgba(4, 10, 10, 0) 0%, #040A0A 100%);
 
 <style scoped>
 .gradient {
