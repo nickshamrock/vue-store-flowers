@@ -7,5 +7,5 @@ import FooterMenu from './components/FooterMenu.vue';
   <router-view></router-view>
   <!-- Router-Content -->
 
-  <FooterMenu></FooterMenu>
+  <footer-menu></footer-menu>
 </template>

@@ -1,5 +1,5 @@
 <script setup>
-import SocialMenu from '../SocialMenu.vue';
+import SocialMenuVerticalView from '../SocialMenuVerticalView.vue';
 </script>
 
 <template>
@@ -9,7 +9,7 @@ import SocialMenu from '../SocialMenu.vue';
     >
       <header class="mb-5 h-fit w-full">
         <nav class="flex flex-wrap items-center justify-start pl-40 pr-40">
-          <img src="/public/logo.png " class="mr-14 block" />
+          <img src="/logo.png " class="mr-14 block" />
           <div class="flex flex-wrap gap-14">
             <a
               href="#"
@@ -37,12 +37,7 @@ import SocialMenu from '../SocialMenu.vue';
               >FAQ</a
             >
             <div class="mr-16 flex hover:cursor-pointer">
-              <img
-                src="/public/icons/search-icon.svg"
-                height="18px"
-                width="18px"
-                class="mr-3 block"
-              />
+              <img src="/icons/search-icon.svg" height="18px" width="18px" class="mr-3 block" />
               <input
                 class="block w-24 bg-black font-[Oswald] text-sm uppercase leading-5 tracking-widest text-white outline-none placeholder:text-white"
                 placeholder="Поиск"
@@ -71,13 +66,10 @@ import SocialMenu from '../SocialMenu.vue';
         </button>
       </div>
 
-      <SocialMenu></SocialMenu>
+      <social-menu-vertical-view></social-menu-vertical-view>
 
-      <div class="gradient absolute bottom-0 z-40 h-1/3 w-full"></div>
-      <img
-        src="/public/images/lover-flower-signature.png"
-        class="absolute bottom-2 right-24 z-50"
-      />
+      <div class="gradient absolute bottom-0 z-40 -mb-1 h-1/3 w-full"></div>
+      <img src="/images/lover-flower-signature.png" class="absolute bottom-2 right-24 z-50" />
     </div>
   </section>
 </template>
