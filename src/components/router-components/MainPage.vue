@@ -8,6 +8,7 @@ import HeaderMenuTransparent from '../HeaderMenuTransparent.vue';
     <div
       class="relative h-full w-full bg-[url('/images/expiremental-background.png')] bg-cover bg-center bg-no-repeat"
     >
+      <!-- сделать наложение по ширине 1440px? например, через display:visible -->
       <header-menu-transparent></header-menu-transparent>
 
       <div class="flex flex-col items-center justify-center">
@@ -37,20 +38,23 @@ import HeaderMenuTransparent from '../HeaderMenuTransparent.vue';
   </section>
 
   <section
-    class="relative flex h-[1029px] w-full justify-between bg-black pl-[165px] pr-[165px]"
+    class="relative flex h-[1029px] w-full justify-between overflow-x-hidden bg-black pl-[165px] pr-[165px]"
     id="second-section"
   >
-    <div class="z-50 mt-[100px] flex flex-col">
+    <div class="relative z-50 mt-[100px] flex flex-col">
       <h2
-        class="mb-[10px] font-['Cormorant'] text-[100px] uppercase leading-[121px] tracking-wide text-white"
+        class="mb-[229px] font-['Cormorant'] text-[100px] uppercase leading-[121px] tracking-wide text-white"
       >
         каталог
       </h2>
-      <div class="mb-[81px] ml-[95px] flex w-[550px] flex-col gap-[30px]">
-        <p class="font-['Oswald'] text-xl font-light leading-[26px] tracking-wider text-white">
-          У нас самый большой выбор цветов, букетов, открыток и подарков. Мы всегда поможем вам
-          подобрать букет для вашего события, наш менеджер вас проконсультирует и поможет
-          определиться с выбором
+
+      <div class="absolute left-[95px] top-[131px] flex flex-col gap-[30px]">
+        <p
+          class="line-clamp-3 w-[540px] font-['Oswald'] text-xl font-light leading-[26px] tracking-wide text-white"
+        >
+          У нас самый большой выбор цветов, букетов, открыток и подарков.<br />
+          Мы всегда поможем вам подобрать букет для вашего события, наш менеджер вас
+          проконсультирует и поможет определиться с выбором
         </p>
         <p class="font-['Oswald'] text-xl font-light leading-[29px] tracking-wide text-white">
           Ознакомьтесь с нашими разделами каталога
@@ -58,7 +62,7 @@ import HeaderMenuTransparent from '../HeaderMenuTransparent.vue';
       </div>
 
       <div
-        class="flex h-[310px] w-[540px] flex-col rounded-[20px] pb-[30px] pl-[31px] pr-[30px] pt-[30px] backdrop-blur-3xl"
+        class="flex h-[310px] w-[540px] flex-col rounded-[20px] pb-[30px] pl-[31px] pr-[30px] pt-[30px] backdrop-blur-lg"
       >
         <ul
           class="mb-auto ml-5 list-disc font-[Oswald] text-lg uppercase leading-[27px] tracking-wider text-white"
@@ -85,7 +89,7 @@ import HeaderMenuTransparent from '../HeaderMenuTransparent.vue';
 
     <div class="z-50 mt-[231px] flex flex-col items-end gap-[30px]">
       <div
-        class="flex h-[281px] w-[445px] flex-col rounded-[20px] pb-[30px] pl-[31px] pr-[30px] pt-[30px] backdrop-blur-3xl"
+        class="flex h-[281px] w-[445px] flex-col rounded-[20px] pb-[30px] pl-[31px] pr-[30px] pt-[30px] backdrop-blur-lg"
       >
         <ul
           class="mb-auto ml-5 list-disc font-[Oswald] text-lg uppercase leading-[27px] tracking-wider text-white"
@@ -108,7 +112,7 @@ import HeaderMenuTransparent from '../HeaderMenuTransparent.vue';
       </div>
 
       <div
-        class="flex h-[264px] w-[540px] flex-col rounded-[20px] pb-[30px] pl-[50px] pr-[30px] pt-[30px] backdrop-blur-3xl"
+        class="flex h-[264px] w-[540px] flex-col rounded-[20px] pb-[30px] pl-[50px] pr-[30px] pt-[30px] backdrop-blur-lg"
       >
         <ul
           class="mb-auto ml-5 list-disc font-[Oswald] text-lg uppercase leading-[27px] tracking-wider text-white"
@@ -133,14 +137,26 @@ import HeaderMenuTransparent from '../HeaderMenuTransparent.vue';
     </div>
 
     <img
-      src="/public/images/ellipses-for-second-section/green-ellipse-second-section.png"
-      class="absolute right-0 z-10"
+      src="/images/ellipses-for-second-section/green-ellipse-second-section.png"
+      class="absolute bottom-1 right-[-1px] z-10"
     />
 
     <img
-      src="/public/images/ellipses-for-second-section/pink-ellipse-second-section.png"
-      class="absolute left-0 z-10"
+      src="/images/ellipses-for-second-section/pink-ellipse-second-section.png"
+      class="absolute left-[-1px] z-10"
     />
+    <span
+      class="transparent absolute right-[-59px] top-[134px] z-20 font-['Oswald'] text-[200px] font-bold uppercase leading-[296px] tracking-[0.033em] text-gray-300"
+      >букеты</span
+    >
+    <span
+      class="transparent absolute left-[-28px] top-[361px] z-20 font-['Oswald'] text-[200px] font-bold uppercase leading-[296px] tracking-wider text-gray-300"
+      >Цветы</span
+    >
+    <span
+      class="transparent absolute bottom-[190px] left-[650px] z-20 font-['Oswald'] text-[200px] font-bold uppercase leading-[200px] tracking-wider text-white"
+      >дополнительно</span
+    >
   </section>
 </template>
 
