@@ -150,11 +150,11 @@ import HeaderMenuTransparent from '../HeaderMenuTransparent.vue';
       >букеты</span
     >
     <span
-      class="absolute left-[-28px] top-[361px] z-20 font-['Oswald'] text-[200px] font-bold uppercase leading-[296px] tracking-wider text-[#0A1717]/40 mix-blend-screen"
+      class="absolute left-[-28px] top-[361px] z-20 font-['Oswald'] text-[200px] font-bold uppercase leading-[296px] tracking-[0.033em] text-[#0A1717]/40 mix-blend-screen"
       >Цветы</span
     >
     <span
-      class="absolute bottom-[190px] left-[650px] z-20 font-['Oswald'] text-[200px] font-bold uppercase leading-[200px] tracking-wider text-[#0A1717]/70 mix-blend-screen"
+      class="absolute bottom-[190px] left-[650px] z-20 font-['Oswald'] text-[200px] font-bold uppercase leading-[200px] tracking-[0.033em] text-[#0A1717]/70 mix-blend-screen"
       >дополнительно</span
     >
   </section>
