@@ -38,7 +38,7 @@ import HeaderMenuTransparent from '../HeaderMenuTransparent.vue';
   </section>
 
   <section
-    class="relative flex h-[1029px] w-full justify-between overflow-x-hidden bg-black pl-[165px] pr-[165px]"
+    class="relative flex h-[1029px] w-full justify-between overflow-x-hidden overflow-y-hidden bg-black pl-[165px] pr-[165px]"
     id="second-section"
   >
     <div class="relative z-50 mt-[100px] flex flex-col">
@@ -62,7 +62,7 @@ import HeaderMenuTransparent from '../HeaderMenuTransparent.vue';
       </div>
 
       <div
-        class="flex h-[310px] w-[540px] flex-col rounded-[20px] pb-[30px] pl-[31px] pr-[30px] pt-[30px] backdrop-blur-lg"
+        class="flex h-[310px] w-[540px] flex-col rounded-[20px] bg-[#00000033] pb-[30px] pl-[31px] pr-[30px] pt-[30px] backdrop-blur"
       >
         <ul
           class="mb-auto ml-5 list-disc font-[Oswald] text-lg uppercase leading-[27px] tracking-wider text-white"
@@ -89,7 +89,7 @@ import HeaderMenuTransparent from '../HeaderMenuTransparent.vue';
 
     <div class="z-50 mt-[231px] flex flex-col items-end gap-[30px]">
       <div
-        class="flex h-[281px] w-[445px] flex-col rounded-[20px] pb-[30px] pl-[31px] pr-[30px] pt-[30px] backdrop-blur-lg"
+        class="flex h-[281px] w-[445px] flex-col rounded-[20px] bg-[#00000033] pb-[30px] pl-[31px] pr-[30px] pt-[30px] backdrop-blur"
       >
         <ul
           class="mb-auto ml-5 list-disc font-[Oswald] text-lg uppercase leading-[27px] tracking-wider text-white"
@@ -112,7 +112,7 @@ import HeaderMenuTransparent from '../HeaderMenuTransparent.vue';
       </div>
 
       <div
-        class="flex h-[264px] w-[540px] flex-col rounded-[20px] pb-[30px] pl-[50px] pr-[30px] pt-[30px] backdrop-blur-lg"
+        class="flex h-[264px] w-[540px] flex-col rounded-[20px] bg-[#00000033] pb-[30px] pl-[50px] pr-[30px] pt-[30px] backdrop-blur"
       >
         <ul
           class="mb-auto ml-5 list-disc font-[Oswald] text-lg uppercase leading-[27px] tracking-wider text-white"
@@ -138,23 +138,23 @@ import HeaderMenuTransparent from '../HeaderMenuTransparent.vue';
 
     <img
       src="/images/ellipses-for-second-section/green-ellipse-second-section.png"
-      class="absolute bottom-1 right-[-1px] z-10"
+      class="absolute bottom-[-50px] right-[-1px] z-10 block overflow-x-hidden overflow-y-hidden opacity-100"
     />
 
     <img
       src="/images/ellipses-for-second-section/pink-ellipse-second-section.png"
-      class="absolute left-[-1px] z-10"
+      class="absolute bottom-[-70px] left-[-1px] z-10 opacity-100"
     />
     <span
-      class="transparent absolute right-[-59px] top-[134px] z-20 font-['Oswald'] text-[200px] font-bold uppercase leading-[296px] tracking-[0.033em] text-gray-300"
+      class="absolute right-[-59px] top-[134px] z-20 font-['Oswald'] text-[200px] font-bold uppercase leading-[296px] tracking-[0.033em] text-[#0A1717]/70 mix-blend-screen"
       >букеты</span
     >
     <span
-      class="transparent absolute left-[-28px] top-[361px] z-20 font-['Oswald'] text-[200px] font-bold uppercase leading-[296px] tracking-wider text-gray-300"
+      class="absolute left-[-28px] top-[361px] z-20 font-['Oswald'] text-[200px] font-bold uppercase leading-[296px] tracking-wider text-[#0A1717]/40 mix-blend-screen"
       >Цветы</span
     >
     <span
-      class="transparent absolute bottom-[190px] left-[650px] z-20 font-['Oswald'] text-[200px] font-bold uppercase leading-[200px] tracking-wider text-white"
+      class="absolute bottom-[190px] left-[650px] z-20 font-['Oswald'] text-[200px] font-bold uppercase leading-[200px] tracking-wider text-[#0A1717]/70 mix-blend-screen"
       >дополнительно</span
     >
   </section>
