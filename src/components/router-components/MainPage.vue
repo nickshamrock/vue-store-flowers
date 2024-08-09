@@ -4,18 +4,31 @@ import HeaderMenuTransparent from '../HeaderMenuTransparent.vue';
 </script>
 
 <template>
-  <section class="h-[1244px] w-full" id="first-section">
-    <div
-      class="relative h-full w-full bg-[url('/images/expiremental-background.png')] bg-cover bg-center bg-no-repeat"
-    >
-      <!-- сделать наложение по ширине 1440px? например, через display:visible -->
+  <section class="h-[1244px] w-full bg-black" id="first-section">
+    <div class="relative z-[10] h-full w-full">
+      <div
+        class="absolute left-0 right-0 top-0 z-[-10] m-auto h-[1244px] max-w-[1440px] bg-[url('/images/black-background-for-first-section.png')] bg-contain bg-no-repeat"
+      ></div>
+
+      <div
+        class="absolute left-0 right-0 top-0 z-[-9] m-auto h-[961px] max-w-[1440px] bg-[url('/images/ellipses-for-firsr-section/elipses-for-first-section.png')] bg-contain bg-no-repeat"
+      ></div>
+
+      <div
+        class="absolute left-0 right-0 top-0 z-[-7] m-auto h-[975px] max-w-[1440px] bg-[url('/images/flowers-under-the-black-background.png')] bg-contain bg-no-repeat"
+      ></div>
+      <p
+        class="absolute left-0 right-0 top-[93px] z-[-8] m-auto w-[788px] font-['Cormorant'] text-[200px] font-light uppercase leading-[242.2px] tracking-[40px] text-white"
+      >
+        Lover
+      </p>
+
       <header-menu-transparent></header-menu-transparent>
 
-      <div class="flex flex-col items-center justify-center">
+      <div class="z-[300] mt-[170px] flex flex-col items-center justify-center">
         <div
-          class="text-center font-['Cormorant'] text-[200px] font-light uppercase leading-[242px] tracking-[29px] text-white max-sm:hidden"
+          class="w-[983px] font-['Cormorant'] text-[200px] font-light uppercase leading-[242px] tracking-[40px] text-white"
         >
-          <p class="mb-[-90px]">Lover</p>
           <h1>Flower</h1>
         </div>
         <p class="mb-12 text-center font-[Oswald] text-xl leading-[29px] tracking-wide text-white">
@@ -32,7 +45,8 @@ import HeaderMenuTransparent from '../HeaderMenuTransparent.vue';
 
       <social-menu-vertical-view></social-menu-vertical-view>
 
-      <div class="gradient absolute bottom-0 z-40 -mb-1 h-1/3 w-full"></div>
+      <div class="gradient absolute bottom-0 z-[40] -mb-1 h-1/3 w-full"></div>
+
       <img src="/images/lover-flower-signature.png" class="absolute bottom-2 right-24 z-50" />
     </div>
   </section>
@@ -166,7 +180,7 @@ import HeaderMenuTransparent from '../HeaderMenuTransparent.vue';
   background: linear-gradient(
     0deg,
     rgba(4, 10, 10, 1) 0%,
-    rgba(4, 10, 10, 0.499124649859944) 50%,
+    rgba(4, 10, 10, 0.5) 50%,
     rgba(4, 4, 10, 0) 100%
   );
 }
