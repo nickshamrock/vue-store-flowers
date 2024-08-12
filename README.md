@@ -1,6 +1,6 @@
 # vue-store-flowers
 
-Скоро тут будет интернет-магазин!
+Скоро тут будет интернет-магазин Lover Flower!
 
 # Макет (Layout) Figma
 
