@@ -4,9 +4,9 @@
       <img src="/logo.png " class="mr-14 block" />
       <div class="flex flex-wrap gap-14">
         <a
-          href="#"
+          href=""
           class="font-[Oswald] text-sm uppercase leading-5 tracking-widest text-white hover:text-[#43FFD2] hover:underline hover:underline-offset-2"
-          >Каталог</a
+          ><router-link to="/catalog">Каталог</router-link></a
         >
         <a
           href="#"

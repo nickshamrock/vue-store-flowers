@@ -10,15 +10,15 @@ import HeaderMenuTransparent from '../HeaderMenuTransparent.vue';
     >
       <div class="relative z-[10] h-full w-full">
         <div
-          class="absolute left-0 right-0 top-0 z-[-10] m-auto h-[1244px] max-w-[1440px] bg-[url('/images/black-background-for-first-section.png')] bg-contain bg-no-repeat min-[1441px]:invisible"
+          class="absolute left-0 right-0 top-0 z-[-10] m-auto h-[1244px] max-w-[1440px] bg-[url('/images/black-background-for-first-section.png')] bg-contain bg-no-repeat min-[1440px]:invisible"
         ></div>
 
         <div
-          class="absolute left-0 right-0 top-0 z-[-9] m-auto h-[961px] max-w-[1440px] bg-[url('/images/ellipses-for-firsr-section/elipses-for-first-section.png')] bg-contain bg-no-repeat min-[1441px]:invisible"
+          class="absolute left-0 right-0 top-0 z-[-9] m-auto h-[961px] max-w-[1440px] bg-[url('/images/ellipses-for-firsr-section/elipses-for-first-section.png')] bg-contain bg-no-repeat min-[1440px]:invisible"
         ></div>
 
         <div
-          class="absolute left-0 right-0 top-0 z-[-7] m-auto h-[975px] max-w-[1440px] bg-[url('/images/flowers-under-the-black-background.png')] bg-contain bg-no-repeat min-[1441px]:invisible"
+          class="absolute left-0 right-0 top-0 z-[-7] m-auto h-[975px] max-w-[1440px] bg-[url('/images/flowers-under-the-black-background.png')] bg-contain bg-no-repeat min-[1440px]:invisible"
         ></div>
         <p
           class="absolute left-0 right-0 top-[93px] z-[-8] m-auto w-[788px] font-['Cormorant'] text-[200px] font-light uppercase leading-[242.2px] tracking-[40px] text-white"
@@ -44,7 +44,7 @@ import HeaderMenuTransparent from '../HeaderMenuTransparent.vue';
             value=""
             class="h-14 w-56 bg-[#43FFD2] px-[50px] py-4 font-[Oswald] text-xs font-bold uppercase leading-4 tracking-widest text-black"
           >
-            Смотреть каталог
+            <router-link to="/catalog"> Смотреть каталог </router-link>
           </button>
         </div>
 
