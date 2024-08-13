@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="absolute right-[165px] top-6 flex flex-col items-end">
+  <div class="flex flex-col items-end">
     <div class="mb-7 flex flex-col items-end gap-1">
       <a
         href="malito:zakaz@loverflower.by"

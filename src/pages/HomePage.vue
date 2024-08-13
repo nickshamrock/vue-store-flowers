@@ -1,33 +1,37 @@
 <script setup>
-import SocialMenuVerticalView from '../../SocialMenuVerticalView.vue';
-import HeaderMenuTransparent from '../../HeaderMenuTransparent.vue';
+import SocialMenuVerticalView from '../components/SocialMenuVerticalView.vue';
+import HeaderMenuTransparent from '../components/HeaderMenuTransparent.vue';
+import { RouterLink } from 'vue-router';
 </script>
 
 <template>
   <section class="h-[1244px] w-full bg-black" id="first-section">
     <div
-      class="z-[-6] h-full w-full bg-[url('/images/expiremental-background.png')] bg-cover bg-no-repeat max-[1441px]:bg-none"
+      class="z-[-6] h-full w-full bg-[url('images/homepage/expiremental-background.png')] bg-cover bg-no-repeat max-[1441px]:bg-none"
     >
       <div class="relative z-[10] h-full w-full">
         <div
-          class="absolute left-0 right-0 top-0 z-[-10] m-auto h-[1244px] max-w-[1440px] bg-[url('/images/black-background-for-first-section.png')] bg-contain bg-no-repeat min-[1441px]:invisible"
+          class="absolute left-0 right-0 top-0 z-[-10] m-auto h-[1244px] max-w-[1440px] bg-[url('images/homepage/black-background-for-first-section.png')] bg-contain bg-no-repeat min-[1441px]:invisible"
         ></div>
 
         <div
-          class="absolute left-0 right-0 top-0 z-[-9] m-auto h-[961px] max-w-[1440px] bg-[url('/images/ellipses-for-firsr-section/elipses-for-first-section.png')] bg-contain bg-no-repeat min-[1441px]:invisible"
+          class="absolute left-0 right-0 top-0 z-[-9] m-auto h-[961px] max-w-[1440px] bg-[url('/images/homepage/ellipses-for-firsr-section/elipses-for-first-section.png')] bg-contain bg-no-repeat min-[1441px]:invisible"
         ></div>
 
         <div
-          class="absolute left-0 right-0 top-0 z-[-7] m-auto h-[975px] max-w-[1440px] bg-[url('/images/flowers-under-the-black-background.png')] bg-contain bg-no-repeat min-[1441px]:invisible"
+          class="absolute left-0 right-0 top-0 z-[-7] m-auto h-[975px] max-w-[1440px] bg-[url('/images/homepage/flowers-under-the-black-background.png')] bg-contain bg-no-repeat min-[1441px]:invisible"
         ></div>
         <p
           class="absolute left-0 right-0 top-[93px] z-[-8] m-auto w-[788px] font-['Cormorant'] text-[200px] font-light uppercase leading-[242.2px] tracking-[40px] text-white"
         >
           Lover
         </p>
+
+        <!-- Это прозрачное меню сверху -->
         <div class="mb-[47px]">
           <header-menu-transparent></header-menu-transparent>
         </div>
+        <!-- Это прозрачное меню сверху -->
 
         <div class="z-[300] mt-[170px] flex flex-col items-center justify-center">
           <div
@@ -38,20 +42,26 @@ import HeaderMenuTransparent from '../../HeaderMenuTransparent.vue';
           <p class="mb-12 text-center font-[Oswald] text-xl leading-[29px] tracking-wide text-white">
             Создаём для тех, кто ценит свежесть и изящество цветка
           </p>
-          <button
-            type="button"
-            value=""
-            class="h-14 w-56 bg-[#43FFD2] px-[50px] py-4 font-[Oswald] text-xs font-bold uppercase leading-4 tracking-widest text-black"
-          >
-            <router-link to="/catalog"> Смотреть каталог </router-link>
-          </button>
+          <router-link to="/catalog">
+            <button
+              type="button"
+              value=""
+              class="h-14 w-56 bg-[#43FFD2] px-[50px] py-4 font-[Oswald] text-xs font-bold uppercase leading-4 tracking-widest text-black"
+            >
+              Смотреть каталог
+            </button>
+          </router-link>
         </div>
 
-        <social-menu-vertical-view></social-menu-vertical-view>
+        <!-- Это меню справа -->
+        <div class="absolute right-[165px] top-6">
+          <social-menu-vertical-view></social-menu-vertical-view>
+        </div>
+        <!-- Это меню справа -->
 
         <div class="gradient absolute bottom-0 z-[40] -mb-1 h-1/3 w-full"></div>
 
-        <img src="/images/lover-flower-signature.png" class="absolute bottom-2 right-24 z-50" />
+        <img src="/images/homepage/lover-flower-signature.png" class="absolute bottom-2 right-24 z-50" />
       </div>
     </div>
   </section>
@@ -91,12 +101,12 @@ import HeaderMenuTransparent from '../../HeaderMenuTransparent.vue';
           <li>розы</li>
           <li>свадебные</li>
         </ul>
-        <a
-          href="/catalog"
+        <router-link
+          to="/catalog"
           class="self-end font-['Oswald'] text-xs font-bold uppercase leading-[18px] tracking-widest text-[#D978AC] underline underline-offset-1"
         >
-          смотреть каталог</a
-        >
+          смотреть каталог
+        </router-link>
       </div>
     </div>
 
@@ -114,12 +124,12 @@ import HeaderMenuTransparent from '../../HeaderMenuTransparent.vue';
           <li>для интерьера</li>
           <li>Композиции</li>
         </ul>
-        <a
-          href="/catalog"
+        <router-link
+          to="/catalog"
           class="self-end font-['Oswald'] text-xs font-bold uppercase leading-[18px] tracking-widest text-[#D978AC] underline underline-offset-1"
         >
-          смотреть каталог</a
-        >
+          смотреть каталог
+        </router-link>
       </div>
 
       <div
@@ -136,22 +146,22 @@ import HeaderMenuTransparent from '../../HeaderMenuTransparent.vue';
           <li>открытки</li>
           <li>упаковка</li>
         </ul>
-        <a
-          href="/catalog"
+        <router-link
+          to="/catalog"
           class="self-end font-['Oswald'] text-xs font-bold uppercase leading-[18px] tracking-widest text-[#D978AC] underline underline-offset-1"
         >
-          смотреть каталог</a
-        >
+          смотреть каталог
+        </router-link>
       </div>
     </div>
 
     <img
-      src="/images/ellipses-for-second-section/green-ellipse-second-section.png"
+      src="/images/homepage/ellipses-for-second-section/green-ellipse-second-section.png"
       class="absolute bottom-[-50px] right-[-1px] z-10 block overflow-x-hidden overflow-y-hidden opacity-100"
     />
 
     <img
-      src="/images/ellipses-for-second-section/pink-ellipse-second-section.png"
+      src="/images/homepage/ellipses-for-second-section/pink-ellipse-second-section.png"
       class="absolute bottom-[-70px] left-[-1px] z-10 opacity-100"
     />
     <span

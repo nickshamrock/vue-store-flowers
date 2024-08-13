@@ -1,6 +1,6 @@
 <script setup>
-import HeaderMenuTransparent from '../../HeaderMenuTransparent.vue';
-import SocialMenuVerticalView from '../../SocialMenuVerticalView.vue';
+import HeaderMenuTransparent from '../components/HeaderMenuTransparent.vue';
+import SocialMenuVerticalView from '../components/SocialMenuVerticalView.vue';
 </script>
 
 <template>
@@ -93,14 +93,12 @@ import SocialMenuVerticalView from '../../SocialMenuVerticalView.vue';
       </div>
     </div>
 
-    <social-menu-vertical-view></social-menu-vertical-view>
+    <div class="absolute right-[165px] top-6">
+      <social-menu-vertical-view></social-menu-vertical-view>
+    </div>
 
     <router-link to="/" class="text-[30px] text-emerald-700">Назад на главную страницу</router-link>
   </section>
 </template>
 
-<style scoped>
-.make-uppercase {
-  text-transform: uppercase;
-}
-</style>
+<style scoped></style>

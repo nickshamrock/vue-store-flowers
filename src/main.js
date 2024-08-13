@@ -2,24 +2,29 @@ import './assets/main.css';
 
 import { createApp } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
-import MainPage from './components/router-components/Main/MainPage.vue';
 import App from './App.vue';
-import CatalogPage from './components/router-components/Catalog/CatalogPage.vue';
+import CatalogPage from './pages/CatalogPage.vue';
+import HomePage from './pages/HomePage.vue';
 
 const router = createRouter({
   routes: [
     {
       path: '/',
-      component: MainPage
+      name: 'home',
+      component: HomePage
     },
 
     {
       path: '/catalog',
+      name: 'catalog',
       component: CatalogPage
     }
   ],
 
-  history: createWebHistory()
+  history: createWebHistory(),
+  scrollBehavior() {
+    return { top: 0 };
+  }
 });
 
 const app = createApp(App);
