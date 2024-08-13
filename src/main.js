@@ -2,9 +2,9 @@ import './assets/main.css';
 
 import { createApp } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
-import MainPage from './components/router-components/MainPage.vue';
+import MainPage from './components/router-components/Main/MainPage.vue';
 import App from './App.vue';
-import CatalogPage from './components/router-components/CatalogPage.vue';
+import CatalogPage from './components/router-components/Catalog/CatalogPage.vue';
 
 const router = createRouter({
   routes: [

@@ -1,6 +1,8 @@
 <template>
-  <header class="mb-5 h-fit w-full">
-    <nav class="flex flex-wrap items-center justify-start pl-40 pr-40 hover:cursor-pointer">
+  <header class="h-fit w-full">
+    <nav
+      class="flex flex-wrap items-center justify-start pl-[165px] pr-[165px] hover:cursor-pointer"
+    >
       <img src="/logo.png " class="mr-14 block" />
       <div class="flex flex-wrap gap-14">
         <a
