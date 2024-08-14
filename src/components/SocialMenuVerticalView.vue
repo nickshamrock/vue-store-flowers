@@ -31,7 +31,7 @@
       <a href="tel:+375291136969" class="font-[Oswald] text-base leading-6 tracking-widest text-[#43FFD2]"
         >+375 (29) 113-69-69</a
       >
-      <button type="button" class="flex items-center gap-2 rounded-xl border border-white px-5 py-3 backdrop-blur-3xl">
+      <button type="button" class="flex items-center gap-2 rounded-xl  px-5 py-3 backdrop-blur-3xl">
         <img src="/icons/phone-icon.svg" height="16px" width="16px" class="block" />
         <p class="font-[Oswald] text-sm uppercase leading-5 tracking-widest text-[#43FFD2]">Заказать звонок</p>
       </button>

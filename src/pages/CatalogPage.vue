@@ -9,7 +9,11 @@ import SocialMenuVerticalView from '../components/SocialMenuVerticalView.vue';
       <header-menu-transparent></header-menu-transparent>
     </div>
 
-    <div class="pl-[165px]" id="catalog-preview">
+    <div class="absolute right-[165px] top-6">
+      <social-menu-vertical-view></social-menu-vertical-view>
+    </div>
+
+    <div class="mb-[30px] pl-[165px]" id="catalog-preview-and-buttons">
       <div class="mb-[23px] flex font-['Oswald'] text-xs uppercase leading-[18px] tracking-[0.48px] text-white">
         <p>
           <router-link to="/">Главная</router-link> /
@@ -93,8 +97,99 @@ import SocialMenuVerticalView from '../components/SocialMenuVerticalView.vue';
       </div>
     </div>
 
-    <div class="absolute right-[165px] top-6">
-      <social-menu-vertical-view></social-menu-vertical-view>
+    <div class="pl-[165px] pr-[165px] outline outline-2 outline-cyan-50" id="catalog">
+      <div class="mb-[10px] flex justify-end">
+        <div class="relative">
+          <select
+            class="h-[40px] w-[257px] appearance-none rounded-[10px] bg-[#00000033] py-[10px] pl-[20px] font-['Oswald'] text-xs font-light uppercase leading-[17.78px] tracking-[0.48px] text-white outline-none backdrop-blur"
+            name="select"
+          >
+            <option value="value1" selected class="rounded-xl bg-black">По популярности</option>
+            <option value="value2" class="rounded-xl bg-black">Значение 2</option>
+            <option value="value3" class="rounded-xl bg-black">Значение 3</option>
+          </select>
+          <img class="absolute right-[16px] top-[16px] block" src="/images/catalog/select-arrow.svg" />
+        </div>
+      </div>
+
+      <div class="flex gap-[30px]">
+        <div
+          class="flex h-[818px] w-[255px] flex-col gap-[20px] font-['Oswald'] uppercase outline outline-2 outline-cyan-50"
+        >
+          <div class="flex flex-col items-start outline outline-2 outline-cyan-50">
+            <p>По свету</p>
+            <label>
+              <input type="radio" name="light" value="gentle" />
+              Нежные
+            </label>
+            <label>
+              <input type="radio" name="light" value="bright" />
+              Яркие
+            </label>
+          </div>
+
+          <div class="flex flex-col items-start outline outline-2 outline-cyan-50">
+            <p>По цвету</p>
+            <label>
+              <input type="radio" name="color" value="white" />
+              Белый
+            </label>
+            <label>
+              <input type="radio" name="color" value="yellow" />
+              Желтый
+            </label>
+            <label>
+              <input type="radio" name="color" value="green" />
+              Зеленый
+            </label>
+            <label>
+              <input type="radio" name="color" value="red" />
+              Красный
+            </label>
+            <label>
+              <input type="radio" name="color" value="orange" />
+              Оранжевый
+            </label>
+            <label>
+              <input type="radio" name="color" value="pink" />
+              Розовый
+            </label>
+            <label>
+              <input type="radio" name="color" value="blue" />
+              Синий
+            </label>
+          </div>
+
+          <div class="flex flex-col items-start outline outline-2 outline-cyan-50">
+            <p>По формату</p>
+            <label><input type="radio" name="format" />Букет</label
+            ><label><input type="radio" name="format" />В вазе</label
+            ><label><input type="radio" name="format" />в конверте</label
+            ><label><input type="radio" name="format" />в корзине</label
+            ><label><input type="radio" name="format" />в шляпной коробке</label
+            ><label><input type="radio" name="format" />в ящике</label>
+          </div>
+
+          <div class="flex flex-col items-start outline outline-2 outline-cyan-50">
+            <p>Стоимость</p>
+            <input type="range" min="1" max="100" value="50" id="myRange" />
+            <p>Цена: 50.00 ₽ – 400.00 ₽</p>
+          </div>
+
+          <div class="flex flex-col items-start outline outline-2 outline-cyan-50">
+            <p>По цветку</p>
+            <label><input type="radio" name="flower" />Альстромерия (2)</label>
+            <label><input type="radio" name="flower" />Антуриум (1)</label>
+            <label><input type="radio" name="flower" />Аспарагус (1)</label>
+            <label><input type="radio" name="flower" />Астильба (7)</label>
+            <label><input type="radio" name="flower" />Астранция (1)</label>
+          </div>
+
+          <button type="button" class="uppercase">Cбросить фильтр</button>
+        </div>
+
+        <div class="h-[818px] w-[825px] outline outline-2 outline-cyan-50"></div>
+      </div>
     </div>
 
     <router-link to="/" class="text-[30px] text-emerald-700">Назад на главную страницу</router-link>
