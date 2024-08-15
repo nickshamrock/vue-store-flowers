@@ -98,6 +98,7 @@ import SocialMenuVerticalView from '../components/SocialMenuVerticalView.vue';
     </div>
 
     <div class="pl-[165px] pr-[165px] outline outline-2 outline-cyan-50" id="catalog">
+      <!-- Это поле select согласно макету, где можно выбрать по популярности и другим фильтрам -->
       <div class="mb-[10px] flex justify-end">
         <div class="relative">
           <select
@@ -111,63 +112,38 @@ import SocialMenuVerticalView from '../components/SocialMenuVerticalView.vue';
           <img class="absolute right-[16px] top-[16px] block" src="/images/catalog/select-arrow.svg" />
         </div>
       </div>
+      <!-- Это поле select согласно макету, где можно выбрать по популярности и другим фильтрам -->
 
       <div class="flex gap-[30px]">
+        <!-- Это меню с фильтрами-радиокнопками -->
         <div
           class="flex h-[818px] w-[255px] flex-col gap-[20px] font-['Oswald'] uppercase outline outline-2 outline-cyan-50"
         >
           <div class="flex flex-col items-start outline outline-2 outline-cyan-50">
             <p>По свету</p>
-            <label>
-              <input type="radio" name="light" value="gentle" />
-              Нежные
-            </label>
-            <label>
-              <input type="radio" name="light" value="bright" />
-              Яркие
-            </label>
+            <label><input type="radio" name="light" value="gentle" />Нежные</label>
+            <label><input type="radio" name="light" value="bright" />Яркие</label>
           </div>
 
           <div class="flex flex-col items-start outline outline-2 outline-cyan-50">
             <p>По цвету</p>
-            <label>
-              <input type="radio" name="color" value="white" />
-              Белый
-            </label>
-            <label>
-              <input type="radio" name="color" value="yellow" />
-              Желтый
-            </label>
-            <label>
-              <input type="radio" name="color" value="green" />
-              Зеленый
-            </label>
-            <label>
-              <input type="radio" name="color" value="red" />
-              Красный
-            </label>
-            <label>
-              <input type="radio" name="color" value="orange" />
-              Оранжевый
-            </label>
-            <label>
-              <input type="radio" name="color" value="pink" />
-              Розовый
-            </label>
-            <label>
-              <input type="radio" name="color" value="blue" />
-              Синий
-            </label>
+            <label><input type="radio" name="color" value="white" />Белый</label>
+            <label><input type="radio" name="color" value="yellow" />Желтый</label>
+            <label><input type="radio" name="color" value="green" />Зеленый</label>
+            <label><input type="radio" name="color" value="red" />Красный</label>
+            <label><input type="radio" name="color" value="orange" />Оранжевый</label>
+            <label><input type="radio" name="color" value="pink" />Розовый</label>
+            <label><input type="radio" name="color" value="blue" />Синий</label>
           </div>
 
           <div class="flex flex-col items-start outline outline-2 outline-cyan-50">
             <p>По формату</p>
-            <label><input type="radio" name="format" />Букет</label
-            ><label><input type="radio" name="format" />В вазе</label
-            ><label><input type="radio" name="format" />в конверте</label
-            ><label><input type="radio" name="format" />в корзине</label
-            ><label><input type="radio" name="format" />в шляпной коробке</label
-            ><label><input type="radio" name="format" />в ящике</label>
+            <label><input type="radio" name="format" />Букет</label>
+            <label><input type="radio" name="format" />В вазе</label>
+            <label><input type="radio" name="format" />в конверте</label>
+            <label><input type="radio" name="format" />в корзине</label>
+            <label><input type="radio" name="format" />в шляпной коробке</label>
+            <label><input type="radio" name="format" />в ящике</label>
           </div>
 
           <div class="flex flex-col items-start outline outline-2 outline-cyan-50">
@@ -187,6 +163,7 @@ import SocialMenuVerticalView from '../components/SocialMenuVerticalView.vue';
 
           <button type="button" class="uppercase">Cбросить фильтр</button>
         </div>
+        <!-- Это меню с фильтрами-радиокнопками -->
 
         <div class="h-[818px] w-[825px] outline outline-2 outline-cyan-50"></div>
       </div>

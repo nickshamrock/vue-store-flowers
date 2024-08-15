@@ -33,20 +33,17 @@ import { RouterLink } from 'vue-router';
         </div>
         <!-- Это прозрачное меню сверху -->
 
-        <div class="z-[300] mt-[170px] flex flex-col items-center justify-center">
-          <div
-            class="w-[983px] font-['Cormorant'] text-[200px] font-light uppercase leading-[242px] tracking-[40px] text-white"
-          >
-            <h1>Flower</h1>
+        <div class="z-[300] mt-[170px] flex flex-col items-center justify-center text-white">
+          <div class="w-[983px]">
+            <h1 class="font-['Cormorant'] text-[200px] font-light uppercase leading-[242px] tracking-[40px]">Flower</h1>
           </div>
-          <p class="mb-12 text-center font-[Oswald] text-xl leading-[29px] tracking-wide text-white">
+          <p class="mb-12 text-center font-[Oswald] text-xl leading-[29px] tracking-wide">
             Создаём для тех, кто ценит свежесть и изящество цветка
           </p>
           <router-link to="/catalog">
             <button
               type="button"
-              value=""
-              class="h-14 w-56 bg-[#43FFD2] px-[50px] py-4 font-[Oswald] text-xs font-bold uppercase leading-4 tracking-widest text-black"
+              class="h-[50px] w-[220px] bg-[#43FFD2] px-[50px] py-4 font-[Oswald] text-xs font-bold uppercase leading-[17.78px] tracking-widest text-black"
             >
               Смотреть каталог
             </button>
@@ -70,31 +67,25 @@ import { RouterLink } from 'vue-router';
     class="relative flex h-[1029px] w-full justify-between overflow-x-hidden overflow-y-hidden bg-black pl-[165px] pr-[165px]"
     id="second-section"
   >
-    <div class="relative z-50 mt-[100px] flex flex-col">
-      <h2 class="mb-[229px] font-['Cormorant'] text-[100px] uppercase leading-[121px] tracking-wide text-white">
-        каталог
-      </h2>
+    <div class="relative z-50 mt-[100px] flex flex-col text-white">
+      <h2 class="mb-[229px] font-['Cormorant'] text-[100px] uppercase leading-[121px] tracking-[2px]">каталог</h2>
 
-      <div class="absolute left-[95px] top-[131px] flex flex-col gap-[30px]">
-        <p class="line-clamp-3 w-[540px] font-['Oswald'] text-xl font-light leading-[26px] tracking-wide text-white">
+      <div
+        class="absolute left-[95px] top-[131px] flex flex-col gap-[30px] font-['Oswald'] text-xl font-light tracking-[0.5px]"
+      >
+        <p class="line-clamp-3 w-[540px] leading-[26px]">
           У нас самый большой выбор цветов, букетов, открыток и подарков.<br />
           Мы всегда поможем вам подобрать букет для вашего события, наш менеджер вас проконсультирует и поможет
           определиться с выбором
         </p>
-        <p class="font-['Oswald'] text-xl font-light leading-[29px] tracking-wide text-white">
-          Ознакомьтесь с нашими разделами каталога
-        </p>
+        <p class="leading-[29px]">Ознакомьтесь с нашими разделами каталога</p>
       </div>
 
       <div
         class="flex h-[310px] w-[540px] flex-col rounded-[20px] bg-[#00000033] pb-[30px] pl-[31px] pr-[30px] pt-[30px] backdrop-blur"
       >
-        <ul class="mb-auto ml-5 list-disc font-[Oswald] text-lg uppercase leading-[27px] tracking-wider text-white">
-          <h3
-            class="mb-[10px] font-['Oswald'] text-3xl font-bold uppercase leading-[44px] tracking-wider text-[#43FFD2]"
-          >
-            Цветы
-          </h3>
+        <ul class="mb-auto ml-5 list-disc font-[Oswald] text-lg uppercase leading-[27px] tracking-[1.1px] text-white">
+          <h3 class="mb-[10px] ml-[-5px] text-3xl font-bold leading-[44px] tracking-[1.2px] text-[#43FFD2]">Цветы</h3>
           <li>Сборные букеты</li>
           <li>Монобукеты</li>
           <li>Композиции из цветов</li>
@@ -114,10 +105,8 @@ import { RouterLink } from 'vue-router';
       <div
         class="flex h-[281px] w-[445px] flex-col rounded-[20px] bg-[#00000033] pb-[30px] pl-[31px] pr-[30px] pt-[30px] backdrop-blur"
       >
-        <ul class="mb-auto ml-5 list-disc font-[Oswald] text-lg uppercase leading-[27px] tracking-wider text-white">
-          <h3
-            class="mb-[10px] font-['Oswald'] text-3xl font-bold uppercase leading-[44px] tracking-wider text-[#43FFD2]"
-          >
+        <ul class="mb-auto ml-5 list-disc font-[Oswald] text-lg uppercase leading-[27px] tracking-[1.1px] text-white">
+          <h3 class="mb-[10px] ml-[-5px] text-3xl font-bold leading-[44px] tracking-[1.2px] text-[#43FFD2]">
             готовые букеты<br />из сухоцветов
           </h3>
           <li>букеты</li>
@@ -135,10 +124,8 @@ import { RouterLink } from 'vue-router';
       <div
         class="flex h-[264px] w-[540px] flex-col rounded-[20px] bg-[#00000033] pb-[30px] pl-[50px] pr-[30px] pt-[30px] backdrop-blur"
       >
-        <ul class="mb-auto ml-5 list-disc font-[Oswald] text-lg uppercase leading-[27px] tracking-wider text-white">
-          <h3
-            class="mb-[10px] font-['Oswald'] text-3xl font-bold uppercase leading-[44px] tracking-wider text-[#43FFD2]"
-          >
+        <ul class="mb-auto ml-5 list-disc font-[Oswald] text-lg uppercase leading-[27px] tracking-[1.1px] text-white">
+          <h3 class="mb-[10px] ml-[-5px] text-3xl font-bold leading-[44px] tracking-[1.2px] text-[#43FFD2]">
             дополнительно
           </h3>
           <li>шары</li>

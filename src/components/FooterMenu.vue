@@ -15,17 +15,17 @@ import SocialMenuCompactView from './SocialMenuCompactView.vue';
 
     <div class="flex h-auto flex-col pt-[30px]">
       <a href="/catalog" class="footer-a-like-h3 mb-[10px]">Каталог</a>
-      <div class="flex flex-col gap-1">
-        <a href="/catalog" class="footer-a">Популярное</a>
-        <a href="/catalog" class="footer-a">Сухоцветы</a>
-        <a href="/catalog" class="footer-a">Букеты роз</a>
-        <a href="/catalog" class="footer-a">Композиции из цветов</a>
-        <a href="/catalog" class="footer-a">Индивидуальный букет</a>
-        <a href="/catalog" class="footer-a">Букет на праздник</a>
-        <a href="/catalog" class="footer-a">Упаковка подарков</a>
-        <a href="/catalog" class="footer-a">Шары</a>
-        <a href="/catalog" class="footer-a">Открытки</a>
-        <a href="/catalog" class="footer-a">Конверты</a>
+      <div class="footer-a flex flex-col gap-1">
+        <a href="/catalog">Популярное</a>
+        <a href="/catalog">Сухоцветы</a>
+        <a href="/catalog">Букеты роз</a>
+        <a href="/catalog">Композиции из цветов</a>
+        <a href="/catalog">Индивидуальный букет</a>
+        <a href="/catalog">Букет на праздник</a>
+        <a href="/catalog">Упаковка подарков</a>
+        <a href="/catalog">Шары</a>
+        <a href="/catalog">Открытки</a>
+        <a href="/catalog">Конверты</a>
       </div>
     </div>
 
