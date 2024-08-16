@@ -1,8 +1,22 @@
 <script setup>
+import { onMounted, ref } from 'vue';
 import HeaderMenuTransparent from '../components/HeaderMenuTransparent.vue';
 import SocialMenuVerticalView from '../components/SocialMenuVerticalView.vue';
 import LeftFilterMenuForCatalog from '@/components/LeftFilterMenuForCatalog.vue';
 import FilterMenuByButtons from '@/components/FilterMenuByButtons.vue';
+import axios from 'axios';
+
+const items = ref([]);
+
+onMounted(async () => {
+  try {
+    const { data } = await axios.get('https://82ef4df1cd12fb6c.mokky.dev/flower_test');
+    items.value = data;
+    console.log(data);
+  } catch (err) {
+    console.log(err);
+  }
+});
 </script>
 
 <template>
@@ -57,7 +71,15 @@ import FilterMenuByButtons from '@/components/FilterMenuByButtons.vue';
         <left-filter-menu-for-catalog></left-filter-menu-for-catalog>
         <!-- Это левое меню с фильтрами-чекбоксами-->
 
-        <div class="h-[818px] w-[825px] outline outline-2 outline-cyan-50"></div>
+        <div class="h-[818px] w-[825px] outline outline-2 outline-cyan-50">
+          <div class="h-1/3 w-1/3 bg-black/50 text-white">
+            <p>Привет из бекенда</p>
+            <p>{{ items }}</p>
+            <div class="mb-5 outline outline-2 outline-cyan-50">
+              <p v-for="item in items" :key="item.id">{{ item.name }}</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
